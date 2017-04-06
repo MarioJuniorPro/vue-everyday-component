@@ -12,7 +12,7 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
-    <img src="./assets/logo.png">
+    
     <ul>
       <li v-for="route of routes">
         <router-link :to="route.link">{{ route.title }}</router-link>
@@ -31,6 +31,7 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App',
       routes: [
+        {link:'/day0', title: 'Day 0'},
         {link:'/day1', title: 'Day 1'},
         {link:'/day2', title: 'Day 2'},
         {link:'/day3', title: 'Day 3'},
