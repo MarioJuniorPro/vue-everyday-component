@@ -1,6 +1,5 @@
 <template>
   <div>
-    DAY 3
     <ul class="element-list">
       <li v-for="item of times" class="element">
         {{item}}

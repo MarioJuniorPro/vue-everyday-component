@@ -15,27 +15,24 @@
     
     <ul>
       <li v-for="route of routes">
-        <router-link :to="route.link">{{ route.title }}</router-link>
+        <router-link :to="route.path">{{ route.title }}</router-link>
       </li>
-      
     </ul>
+    <hr />
     
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import routes from './routes'
+
 export default {
   name: 'app',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      routes: [
-        {link:'/day0', title: 'Day 0'},
-        {link:'/day1', title: 'Day 1'},
-        {link:'/day2', title: 'Day 2'},
-        {link:'/day3', title: 'Day 3'},
-      ]
+      routes: routes
     }
   }
 }
@@ -67,5 +64,9 @@ li {
 
 a {
   color: #42b983;
+}
+
+.router-link-active {
+  font-weight: bold;
 }
 </style>

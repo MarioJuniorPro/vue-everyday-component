@@ -2,17 +2,17 @@
 
 > A Vue.js project
 
-## Build Setup
+## Progress
 
-``` bash
-# install dependencies
-npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
+### Day 1
+- Modal Component
 
-# build for production with minification
-npm run build
-```
+### Day 2
+- Password Strength Component
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### Day 3
+- ScrollTop Component
+
+### Day 4
+- Activity Component

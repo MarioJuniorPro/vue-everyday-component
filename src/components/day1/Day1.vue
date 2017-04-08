@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>DAY 1</h1>
     <button id="show-modal" @click="openModal">Show Modal</button>
         
     <modal v-if="showModal" @close="closeModal">
