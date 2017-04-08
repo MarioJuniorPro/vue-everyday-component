@@ -1,11 +1,11 @@
 <template>
-  month activity
+  comp
 </template>
 
 <script>
 
 export default {
-  name: 'month-activity',
+  name: '',
   data() {
     return {
     }

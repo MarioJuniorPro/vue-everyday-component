@@ -15,4 +15,4 @@
 - ScrollTop Component
 
 ### Day 4
-- Activity Component
+- Github Activity Component (very simple one)
