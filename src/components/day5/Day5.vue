@@ -1,17 +1,17 @@
 <template>
   <div>
-    DAY 5
+    <clock></clock>
   </div>
 </template>
 
 <script>
 import Vue from 'vue'
+import Clock from './Clock.vue'
 
 export default {
   name: 'day5',
-  data() {
-    return {
-    }
+  components: {
+    'clock': Clock
   }
 }
 </script>
