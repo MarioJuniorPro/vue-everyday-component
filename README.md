@@ -16,3 +16,9 @@
 
 ### Day 4
 - Github Activity Component (very simple one)
+
+### Day 5
+- Clock Component
+
+### Day 6
+- DataTable with pagination (Very simple) Component

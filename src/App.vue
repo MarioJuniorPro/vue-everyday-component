@@ -13,7 +13,7 @@
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
     
-    <ul>
+    <ul class="routes">
       <li v-for="route of routes">
         <router-link :to="route.path">{{ route.title }}</router-link>
       </li>
@@ -68,5 +68,9 @@ a {
 
 .router-link-active {
   font-weight: bold;
+}
+
+.routes li {
+  margin: 5px;
 }
 </style>
