@@ -22,3 +22,6 @@
 
 ### Day 6
 - DataTable with pagination (Very simple) Component
+
+### Day 7
+- Editor Component using Ace lib
