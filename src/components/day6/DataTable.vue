@@ -17,15 +17,15 @@
           <td>{{item.stargazers_count}}</td>
           <td>{{item.language}}</td>
           <td>
-            <a :href="item.owner.html_url"
+            <!--<a :href="item.owner.html_url"
                target="_blank"><img :src="item.owner.avatar_url"
                    class="image is-24x24"
-                   :title="item.owner.login" /></a>
+                   :title="item.owner.login" /></a>-->
           </td>
         </tr>
       </tbody>
     </table>
-    <paginator :currentPage="currentPage" :totalPages="totalPages" @currentPage="changePage"></paginator>
+    <paginator :currentPage="currentPage" :totalItems="getCount" :perPage="perPage" @pageChanged="pageChanged"></paginator>
   </div>
 </div>
 </template>
@@ -37,7 +37,15 @@ export default {
    components: {
     'paginator': Paginator
   },
-  props: ['items'],
+  props: {
+    'items':{
+      default: []
+    },
+    perPage: {
+      type: Number,
+      default: 10
+    }
+  },
   data() {
     return {
       currentPage: 3,
@@ -46,12 +54,15 @@ export default {
   },
   computed: {
     getPaginated(){
-      let offset = 5 * this.currentPage
-      return this.items.slice(offset, offset+10)
+      let offset = (this.currentPage-1) * this.perPage 
+      return this.items.slice(offset, offset+this.perPage)
+    },
+    getCount(){
+      return this.items.length
     }
   },
   methods: {
-    changePage($page){
+    pageChanged($page){
       this.currentPage = $page
     }
   }

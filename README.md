@@ -25,3 +25,6 @@
 
 ### Day 7
 - Editor Component using Ace lib
+
+### Day 8
+- Speed Reader
