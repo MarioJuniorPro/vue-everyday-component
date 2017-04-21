@@ -7,6 +7,7 @@ import Day5 from './components/day5/Day5.vue'
 import Day6 from './components/day6/Day6.vue'
 import Day7 from './components/day7/Day7.vue'
 import Day8 from './components/day8/Day8.vue'
+import Day9 from './components/day9/Day9.vue'
 
 
 const routes = [
@@ -19,6 +20,7 @@ const routes = [
   { path: '/day6', component: Day6, title: 'D-06 - DataTable' },
   { path: '/day7', component: Day7, title: 'D-07 - Editor' },
   { path: '/day8', component: Day8, title: 'D-08 - SpeedReader' },
+  { path: '/day9', component: Day9, title: 'D-09 - Form' },
 ]
 
 export default routes
